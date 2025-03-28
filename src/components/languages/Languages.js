@@ -1,6 +1,6 @@
 import React from 'react';
 import './Languages.css';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Languages = () => {
   const sectionRef = useScrollAnimation();

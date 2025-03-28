@@ -1,6 +1,6 @@
 import React from 'react';
 import './Certifications.css';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Certifications = () => {
   const sectionRef = useScrollAnimation();

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Experience.css';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Experience = () => {
   const sectionRef = useScrollAnimation();

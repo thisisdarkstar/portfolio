@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Projects = () => {
   const sectionRef = useScrollAnimation();

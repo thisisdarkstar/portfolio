@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Skills = () => {
   const sectionRef = useScrollAnimation();
@@ -26,7 +26,6 @@ const Skills = () => {
         { name: 'Bash', level: 80 },
         { name: 'JavaScript', level: 75 },
         { name: 'Java', level: 70 },
-        { name: 'C', level: 65 },
         { name: 'XML', level: 70 }
       ]
     },
@@ -58,13 +57,16 @@ const Skills = () => {
         { name: 'Linux', level: 90 },
         { name: 'Windows', level: 85 },
         { name: 'Android', level: 75 },
-        { name: 'Kali Linux', level: 90 }
+        { name: 'Kali Linux', level: 90 },
+        { name: 'Parrot Sec', level: 90 },
+        { name: 'Black Arch', level: 70 },
       ]
     },
     {
       title: 'Cloud & DevOps',
       skills: [
         { name: 'AWS', level: 75 },
+        { name: 'Digital Ocean', level: 90 },
         { name: 'Docker', level: 70 },
         { name: 'Git', level: 85 },
         { name: 'CI/CD', level: 70 }
