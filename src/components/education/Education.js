@@ -10,6 +10,7 @@ const Education = () => {
       degree: "Diploma In Cybernatics",
       school: "ASD Academy",
       period: "Jul 2023 - Dec 2024",
+      credential: "https://drive.google.com/file/d/1SI0d1hJ9u1JhuX5SWGsqyjUq0lCnLxHf/view?usp=sharing",
       details: [
         "Basic Networking: Learned networking fundamentals, including protocols and IP configuration",
         "Web Development: Built responsive websites using HTML, CSS, JavaScript, and frameworks like React",
@@ -41,6 +42,16 @@ const Education = () => {
               <span className="education-period">{edu.period}</span>
             </div>
             <div className="school-name">{edu.school}</div>
+            {edu.credential && (
+              <a
+                className="education-credential"
+                href={edu.credential}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Certificate
+              </a>
+            )}
             <ul className="education-content">
               {edu.details.map((detail, idx) => (
                 <li key={idx}>{detail}</li>
@@ -53,4 +64,4 @@ const Education = () => {
   );
 };
 
-export default Education; 
+export default Education;

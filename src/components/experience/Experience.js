@@ -38,7 +38,31 @@ const Experience = () => {
         'Discovered and analyzed high-risk vulnerabilities (SQLi, XSS, RCE) in web applications',
         'Provided detailed reports with actionable remediation steps',
         'Advised development teams on secure coding and best practices'
-      ]
+      ],
+      credential: "https://drive.google.com/file/d/1BqeHfIFxJl56abPq7rnsRyG3dEWaSeNj/view?usp=sharing"
+    },
+    {
+      title: 'Front End Developer Lead',
+      period: 'March 1st - March 30th 2024',
+      company: 'EduNear',
+      details: [
+        'Supervised and supported frontend developers on the team',
+        'Reviewed, maintained, and corrected code as needed',
+        'Provided guidance and solutions when team members were stuck',
+        'Worked with React.js and Tailwind CSS'
+      ],
+      credential: "https://drive.google.com/file/d/11CZ2bCl40ltU2TFoqL6e3u9Sm1e2UIGQ/view?usp=sharing"
+    },
+    {
+      title: 'Cyber Security Intern',
+      period: 'March 26 - April 28 2024',
+      company: 'CFSS',
+      details: [
+        'Performed security awareness tasks such as CCTV camera and webcam hacking demonstrations (for awareness, with PoC writeups)',
+        'Wrote Python scripts for password complexity checking, image encryption/decryption, and network sniffing',
+        'Documented findings and created awareness materials'
+      ],
+      credential: "https://drive.google.com/file/d/1PyxhYHKDQzK6sQZLsZfIh3y7yXrlN-6o/view?usp=sharing"
     }
   ];
 
@@ -53,8 +77,20 @@ const Experience = () => {
               <div className="experience-header">
                 <h3>{exp.title}</h3>
                 <span className="experience-period">{exp.period}</span>
+                <div className="experience-meta">
+                  <span className="experience-company">{exp.company}</span>
+                  {exp.credential && (
+                    <a
+                      className="experience-credential"
+                      href={exp.credential}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Certificate
+                    </a>
+                  )}
+                </div>
               </div>
-              <p className="experience-company">{exp.company}</p>
               <ul className="experience-details">
                 {exp.details.map((detail, idx) => (
                   <li key={idx}>{detail}</li>
@@ -68,4 +104,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;

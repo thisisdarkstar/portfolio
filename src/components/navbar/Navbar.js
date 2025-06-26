@@ -22,6 +22,7 @@ const Navbar = () => {
           <li><a href="#about" onClick={toggleMenu}>About</a></li>
           <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
           <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+          <li><a href="#writeups" onClick={toggleMenu}>WriteUps</a></li>
           <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
         </ul>
       </nav>
